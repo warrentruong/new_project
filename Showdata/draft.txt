@@ -1,0 +1,29 @@
+  const findSearch = (item) => {
+      console.log("props.listClass", props.listClass)
+      // console.log("Search text from find search:", searchText);
+    // const index = props.listClass.findIndex((todo) => {
+    //     console.log("todo", todo);
+    //     var arrayName  = [];
+    //     if (todo.text.toLowerCase().includes(item.toLowerCase())){
+    //         arrayName.push(todo)
+    //     }
+    //   return todo.text.toLowerCase().includes(item.toLowerCase());
+    // });
+      var arrayName  = [];
+      const index = props.listClass.findIndex((todo) => {
+          console.log("todo", todo);
+          if (todo.text.toLowerCase().includes(item.toLowerCase())){
+              arrayName.push(todo)
+          }
+        return arrayName;
+      });
+    //   console.log("arrayName", arrayName);
+    // const element = props.listClass[index];
+    // console.log("From find search!!");
+    // console.log(item);
+    // console.log(index);
+    // console.log(element);
+      console.log("index", index);
+    setsearchText(props.listClass);
+    // List3 = props.listClass;
+  };
